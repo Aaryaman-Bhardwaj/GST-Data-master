@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aaryaman.gstdatamaster.Fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/calculateFragment"
+        android:name="com.aaryaman.gstdatamaster.Fragment.CalculateFragment"
+        android:label="fragment_calculate"
+        tools:layout="@layout/fragment_calculate">
+        <action
+            android:id="@+id/NavigateToDownloadFragment"
+            app:destination="@id/downloadFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.aaryaman.gstdatamaster.Fragment.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.aaryaman.gstdatamaster.Fragment.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+
+</navigation>
