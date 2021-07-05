@@ -8,16 +8,16 @@
         android:id="@+id/homeFragment"
         android:name="com.aaryaman.gstdatamaster.Fragment.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_calculateFragment"
+            app:destination="@id/calculateFragment" />
+    </fragment>
     <fragment
         android:id="@+id/calculateFragment"
         android:name="com.aaryaman.gstdatamaster.Fragment.CalculateFragment"
         android:label="fragment_calculate"
-        tools:layout="@layout/fragment_calculate">
-        <action
-            android:id="@+id/NavigateToDownloadFragment"
-            app:destination="@id/downloadFragment"/>
-    </fragment>
+        tools:layout="@layout/fragment_calculate"/>
     <fragment
         android:id="@+id/downloadFragment"
         android:name="com.aaryaman.gstdatamaster.Fragment.DownloadFragment"
