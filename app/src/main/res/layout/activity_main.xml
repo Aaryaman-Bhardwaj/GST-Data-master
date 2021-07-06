@@ -27,11 +27,11 @@
             android:textSize="25sp"
             />
             <TextView
-                android:id="@+id/UserName"
+                android:id="@+id/UserName1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/welcome"
-                android:text="Shishir"
+                android:text="User"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="30dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/a"/>
+            android:src="@drawable/profilepic1"/>
       </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
