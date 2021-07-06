@@ -17,7 +17,12 @@
         android:id="@+id/calculateFragment"
         android:name="com.aaryaman.gstdatamaster.Fragment.CalculateFragment"
         android:label="fragment_calculate"
-        tools:layout="@layout/fragment_calculate"/>
+
+        tools:layout="@layout/fragment_calculate">
+    </fragment>
+
+
+
     <fragment
         android:id="@+id/downloadFragment"
         android:name="com.aaryaman.gstdatamaster.Fragment.DownloadFragment"
@@ -28,5 +33,11 @@
         android:name="com.aaryaman.gstdatamaster.Fragment.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/selectColumnFragment"
+        android:name="com.aaryaman.gstdatamaster.Fragment.SelectColumnFragment"
+        android:label="fragment_select_column"
+        tools:layout="@layout/fragment_select_column"
+        />
 
 </navigation>
