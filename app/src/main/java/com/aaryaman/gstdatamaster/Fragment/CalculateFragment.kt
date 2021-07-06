@@ -1,5 +1,7 @@
 package com.aaryaman.gstdatamaster.Fragment
 
+import com.aaryaman.gstdatamaster.DbManager
+import android.content.ContentValues
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.activity.result.contract.ActivityResultContracts
-import androidx.navigation.Navigation
+import com.aaryaman.gstdatamaster.Data
 import com.aaryaman.gstdatamaster.R
+import kotlinx.android.synthetic.main.fragment_calculate.*
+import java.util.*
 
 
 class CalculateFragment : Fragment() {
@@ -30,7 +33,15 @@ class CalculateFragment : Fragment() {
         preview=view.findViewById(R.id.previewCalculate)
 
         calculateBtn.setOnClickListener {
+            val dbManager = DbManager(requireContext())
 
+            val values = ContentValues()
+
+            values.put("File name", FileName.text.toString())
+            values.put("Date", Calendar.getInstance().time.toString())
+            values.put("Location", Data.fileLocation.toString())
+
+            val id =dbManager.InsertEntry(values)
         }
 
         preview.setOnClickListener {
