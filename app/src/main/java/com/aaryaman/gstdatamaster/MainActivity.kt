@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.aaryaman.gstdatamaster.utils.UserInfo
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,6 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
 
         UserName1=findViewById(R.id.UserName1)
-        UserName1.text=UserInfo.Myname(this)
+        UserName1.text= UserInfo.myName
     }
 }
