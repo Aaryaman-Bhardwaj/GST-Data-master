@@ -1,6 +1,7 @@
 package com.aaryaman.gstdatamaster.Fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -39,8 +40,6 @@ class CalculateFragment : Fragment() {
         // Inflate the layout for this fragment
         val view=inflater.inflate(R.layout.fragment_calculate, container, false)
 
-        val CalculateButton=view.findViewById<Button>(R.id.CalculateButton)
-        CalculateButton.setOnClickListener{Navigation.findNavController(view).navigate(R.id.NavigateToDownloadFragment)}
         return view
     }
 
