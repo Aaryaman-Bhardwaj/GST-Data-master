@@ -28,6 +28,11 @@ class DbManager(context: Context) {
 
     var sqlDB: SQLiteDatabase? = null
 
+    init {
+        var db = DatabaseHelper(context)
+        sqlDB =db.writableDatabase
+    }
+
     inner class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, dbName, null, dbVersion) {
 
         var context: Context? = null

@@ -1,6 +1,4 @@
-package com.aaryaman.gstdatamaster.Data
-
-import java.util.ArrayList
+package com.aaryaman.gstdatamaster.SpinnerData
 
 object DataExcel {
 

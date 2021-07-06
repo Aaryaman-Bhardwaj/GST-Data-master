@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import com.aaryaman.gstdatamaster.Data.DataExcel
+import com.aaryaman.gstdatamaster.SpinnerData.DataExcel
 import com.aaryaman.gstdatamaster.R
 
 // TODO: Rename parameter arguments, choose names that match

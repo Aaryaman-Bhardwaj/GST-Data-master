@@ -6,11 +6,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.aaryaman.gstdatamaster.Data
 import com.aaryaman.gstdatamaster.DbManager
 import com.aaryaman.gstdatamaster.HistoryDataItem
 import com.aaryaman.gstdatamaster.R
-
+import com.aaryaman.gstdatamaster.recycler.HistoryRecyclerAdapter
+import kotlinx.android.synthetic.main.fragment_history.*
+import kotlinx.android.synthetic.main.fragment_history.view.*
 
 
 class HistoryFragment : Fragment() {
@@ -47,6 +50,11 @@ class HistoryFragment : Fragment() {
             Data.historyList.add(a)
         }
 
+
+        view.history_recycle4r_view.apply {
+            layoutManager = LinearLayoutManager(requireContext())
+            adapter = HistoryRecyclerAdapter()
+        }
 
         return view
     }
