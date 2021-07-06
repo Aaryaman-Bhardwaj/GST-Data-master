@@ -5,11 +5,11 @@
         android:title="Home"
         android:icon="@drawable/ic_home"
         />
-    <item
-        android:id="@+id/calculateFragment"
-        android:title="Calculate"
-        android:icon="@drawable/ic_calculate"
-        />
+<!--    <item-->
+<!--        android:id="@+id/calculateFragment"-->
+<!--        android:title="Calculate"-->
+<!--        android:icon="@drawable/ic_calculate"-->
+<!--        />-->
     <item
         android:id="@+id/historyFragment"
         android:title="History"
